@@ -9,5 +9,6 @@ Spring Security In-Memory Authentcation Example
 ## Test
 
 ```bash
-# unit tests
+# unit test
+
 $ mvn test -e
