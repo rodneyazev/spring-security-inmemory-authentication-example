@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://i.imgur.com/Lxfk9IE.png" width="400" alt="Spring Boot Logo" /></a>
+  <img src="https://i.imgur.com/Lxfk9IE.png" width="400" alt="Spring Boot Logo" />
 </p>
 
 ## Description
@@ -16,5 +16,5 @@ $ mvn test -e
 ## Source file / directory structure
 
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://i.imgur.com/Da2cvNI.png" width="400" alt="Spring Security In-Memory Authentication Image" /></a>
+  <img src="https://i.imgur.com/Da2cvNI.png" width="400" alt="Spring Security In-Memory Authentication Image" />
 </p>
