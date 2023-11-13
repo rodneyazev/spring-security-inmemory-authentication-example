@@ -2,7 +2,7 @@ README.md
 ========================
 
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://i.imgur.com/wCj9Rps.png" width="200" alt="Spring Boot Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://i.imgur.com/RWzvzEW.jpg" width="200" alt="Spring Boot Logo" /></a>
 </p>
 
 ## Description
