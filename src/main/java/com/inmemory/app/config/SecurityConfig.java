@@ -25,8 +25,7 @@ public class SecurityConfig  {
 		
 		http
 			.csrf(csrf -> csrf
-				.disable())
-				
+				.disable())	
 			.authorizeHttpRequests(
 				auth -> auth
 					.requestMatchers("/", "/v3/**", "/swagger-ui/**","/swagger/**").permitAll()
@@ -34,7 +33,6 @@ public class SecurityConfig  {
 					.requestMatchers("/admin").hasAnyRole("ADMIN","GURU")
 					.requestMatchers("/guru").hasRole("GURU")
 					.anyRequest().authenticated())
-			
 			.formLogin(Customizer.withDefaults());	//or .httpBasic(Customizer.withDefaults()) - Popup authentication box
 			
 		return http.build();		
@@ -45,19 +43,19 @@ public class SecurityConfig  {
 	    InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
 	    
 	    manager.createUser(User.withUsername("user")
-	      .password(bCryptPasswordEncoder.encode("password"))
-	      .roles("USER")
-	      .build());
+	    	.password(bCryptPasswordEncoder.encode("password"))
+	      	.roles("USER")
+	      	.build());
 	    
 	    manager.createUser(User.withUsername("admin")
-	      .password(bCryptPasswordEncoder.encode("password"))
-	      .roles("ADMIN")
-	      .build());
+	    	.password(bCryptPasswordEncoder.encode("password"))
+	      	.roles("ADMIN")
+	      	.build());
 	    
 	    manager.createUser(User.withUsername("guru")
-	  	      .password(bCryptPasswordEncoder.encode("password"))
-	  	      .roles("USER","ADMIN", "GURU")
-	  	      .build());
+	    	.password(bCryptPasswordEncoder.encode("password"))
+	  	    .roles("GURU")
+	  	    .build());
 	    
 	    return manager;
 	}
