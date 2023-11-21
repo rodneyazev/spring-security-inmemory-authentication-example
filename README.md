@@ -10,6 +10,26 @@ Spring Security In-Memory Authentcation Example
 
 Swagger: http://localhost:8080/swagger
 
+## Login links
+
+http://localhost:8080/user
+
+- Username: user
+
+- Password: password
+
+http://localhost:8080/admin
+
+- Username: admin
+
+- Password: password
+
+http://localhost:8080/guru
+
+- Username: guru
+
+- Password: password
+
 ## Test
 
 ```bash

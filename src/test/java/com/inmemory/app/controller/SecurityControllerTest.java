@@ -16,7 +16,7 @@ import org.springframework.test.web.servlet.MockMvc;
 class SecurityControllerTest {
 	
 	@Autowired
-    private MockMvc mvc;
+	private MockMvc mvc;
 
 	@Test
 	void testHomeEndpointAccess() throws Exception {
